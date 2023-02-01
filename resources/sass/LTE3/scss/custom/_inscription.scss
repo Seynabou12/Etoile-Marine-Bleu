@@ -1,0 +1,256 @@
+// $fontFamilly : Geomatrix;
+body
+{
+    font-family:  'Geomatrix-8MYjn', sans-serif, 'josefin sans';
+    height: 100vh;
+}
+
+.container-r
+{
+    // display: flex;
+    // flex-direction: row;
+    // flex-wrap: nowrap;
+    // background-color: #ffff;
+    // margin: 0 auto;
+
+}
+.container-form-register
+{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 45%;
+    >h2
+    {
+        font-size: 30px;
+        font-family: 'Josefin Sans';
+    }
+    .form-register-identifiant
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding:  0;
+        >label
+        {
+            font-size: 14px;
+            font-weight: 300;
+        }
+        >input
+        {
+            width: 95%;
+            border-radius: 10px;
+            padding: 10px;
+            border: none;
+            height: 55px;
+            background-color: #f2f2f2;
+        }
+        >input:hover
+        {
+            background-color: $primary;
+            opacity: 0.33;
+        }
+    }
+    .form-register-password
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding:  0;
+        >label
+        {
+            font-size: 14px;
+            font-weight: 300;
+        }
+        >input
+        {
+            width: 95%;
+            border-radius: 10px;
+            padding: 10px;
+            border: none;
+            height: 55px;
+            background-color: #f2f2f2;
+        }
+        >input:hover
+        {
+            background-color: $primary;
+            opacity: 0.33;
+        }
+    }
+    .form-register-password-repeat
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding:  0;
+        >label
+        {
+            font-size: 14px;
+            font-weight: 300;
+        }
+        >input
+        {
+            width: 95%;
+            border-radius: 10px;
+            padding: 10px;
+            border: none;
+            height: 55px;
+            background-color: #f2f2f2;
+        }
+        >input:hover
+        {
+            background-color: $primary;
+            opacity: 0.33;
+        }
+    }
+    .form-register-years
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 2% 0; //comment
+        >label
+        {
+            font-size: 14px;
+            font-weight: 300;
+            margin-bottom: 15px;
+        }
+        .input{
+           #radio-text{
+            color: #c3c3c3;
+           }
+           >input[type="radio"]
+           {
+              width: 20px;
+              height: 20px;
+              border: none;
+           }
+        }
+        p
+        {
+            padding: 2% 0;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+        .last-radio
+        {
+            margin-top: -10px;
+        }
+    }
+    .form-register-submit
+    {
+        >button{
+            background-color: $primary;
+            width: auto;
+            height: 44px;
+            border: none;
+            padding: 0 32px 0 32px;
+            border-radius: 30px;
+            color: #ffff;
+            box-shadow: 0 10px 20px rgba(255, 84, 41, 0.228);
+        }
+    }
+
+}
+.container-desc-register
+{
+    margin-top: 5%;
+   display: flex;
+   flex-direction: column;
+//    align-items: center;
+   .desc-register-action
+   {
+        display: flex;
+        flex-direction: row;
+        >p
+        {
+            font-size: 12px;
+            font-weight: 600;
+        }
+        >h3
+        {
+            font-size: 18px;
+            font-weight: lighter;
+        }
+        >a
+        {
+            font-size: 16px;
+        }
+   }
+   .desc-register-require
+    {
+        >p
+        {
+            margin-top: 8px;
+            font-size: 14;
+            padding: 8% 0;
+            color: $primary;
+        }
+    }
+   .desc-register-maxlength
+     {
+      >p
+      {
+            margin-top: 20%;
+            font-size: 14px;
+
+      }
+     }
+    .desc-register-maxlength-details
+     {
+        width: 85%;
+        height: 30%;
+        padding: 3%;
+        border: 1px solid #ACACAC;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-radius: 10px;
+        padding-bottom: -4px;
+        font-size: 14px;
+        margin-left: 4px;
+        margin-right: 19px;
+
+        >p
+        {
+            color: green;
+            >img{
+                color: green !important;
+                margin-right: 4px;
+            }
+        }
+     }
+     .back-home
+     {
+        position: absolute;
+        bottom: 80px;
+        right: 25px;
+        text-decoration: underline;
+     }
+}
+.container-img-register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .imgR
+    {
+        padding: 30px;
+        .img
+        {
+            width: 100%;
+        }
+        .txt-img{
+            position: absolute;
+            width: 150px;
+            height: 45px;
+            margin-left: -25px;
+        }
+    }
+}
+.radius-10{
+    border-radius: 10px !important;
+}
+@media only screen and (max-width: 700px){
+
+}

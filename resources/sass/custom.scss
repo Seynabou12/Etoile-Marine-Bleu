@@ -1,0 +1,9 @@
+.content{
+    &__card{
+        @extend .shadow-sm;
+        @extend .text-white;
+        border-radius: 30px;
+        background-color: white;
+        padding: 1.25rem;
+    }
+}

@@ -1,0 +1,129 @@
+// .btn{
+//     &:active{
+//         & > .progress__bar{
+//             transform: scaleX(1);
+//             // animation-name : progress-bar;
+//             // animation-duration: 100ms;
+//             animation: progress-bar 3000ms;
+//         }
+//     }
+// }
+$dur: 1000ms;
+$delay: 150ms;
+$logo-delay: $dur + $delay*2;
+.progress{
+    &__bar{
+        transform-origin: left;
+        background: #008038;
+        transform: scaleX(0.5);
+        animation: pg-abs $dur $delay;
+        animation-fill-mode: both;
+    }
+}
+.logo{
+    animation: logo-abs 0ms $logo-delay both;
+}
+@keyframes logo-abs {
+    0%{
+        transform: translate(-9999px)
+    }
+    100%{
+        transform: translate(0)
+    }
+}
+@keyframes pg-abs{
+    0%{
+        transform: scaleX(0)
+    }
+    25%{
+        transform: scaleX(.18)
+    }
+    50%{
+        transform: scaleX(.4)
+    }
+    75%{
+        transform: scaleX(.81)
+    }
+    100%{
+        transform: scaleX(1)
+    }
+}
+
+
+.form{
+    &__group{
+        &input{
+            &:focus{
+                border: 2px solid;
+            }
+            &:not(:focus):invalid{
+                background: #B20000;
+                color: #008038;
+            }
+        }
+    }
+}
+
+
+.archive{
+    &_footer{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
+nav {
+    .pagination {
+        display: inline-flex !important;
+    }
+}
+.border-bottom-primary {
+    border-bottom: 0.10rem solid #B20000 !important;
+}
+.filtre-btn{
+    padding: 2px 15px !important;
+    margin-top: -5px !important;
+
+}
+#filter-init{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.badge-filter{
+    padding: 2px 5px 3px 5px;
+    margin-left:5px;
+    margin-top: 3px;
+}
+.archive__numero{
+    position: absolute;
+    left: calc( 50% - 27px);
+    top: 60px;
+    color: white;
+}
+.empty{
+    margin-top: 15%;
+    text-align: center;
+    color: #ccc;
+    font-size: 16px;
+}
+.archive{
+    position: relative;
+}
+.dashboard{
+    &_table{
+        height: 346px;
+        overflow: auto;
+        padding: 10px;
+    }
+}
+
+.bg-gradient{
+    background: linear-gradient(135deg, #008038 0%, #214999 100%) !important;
+}
+.btn-gradient{
+    background-color: linear-gradient(135deg, #008038 0%, #214999 100%) !important;
+    color: #fff;
+    border-color: #214999;
+    box-shadow: none;
+}

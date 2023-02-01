@@ -1,0 +1,395 @@
+$gris: #F2F2F2;
+$dark: #232323;
+$primary: #ff552a;
+@mixin radius($size) {
+    border-radius: $size !important;
+}
+
+@mixin f-size($size) {
+    font-size: $size;
+}
+
+@mixin background($imgpath, $position:0 0, $repeat: no-repeat) {
+    background: url($imgpath);
+    background-position: $position;
+    background-repeat: $repeat;
+}
+
+@mixin line-height ($size) {
+    line-height: $size;
+}
+
+.text-black {
+    color: $dark !important;
+}
+
+.line-height {
+    @include line-height(5px);
+}
+
+.border-radius {
+    @include radius(20px);
+    // overflow: hidden;
+}
+
+.card {
+    box-shadow: 0px 10px 30px rgb(0 0 0 / 5%) !important;
+}
+
+.btn-contact {
+    background-color: $dark !important;
+    border: 1px solid $dark !important;
+}
+
+.btn-contact-2 {
+    background-color: $primary !important;
+    border: 1px solid $primary !important;
+}
+
+.navbar {
+    overflow: hidden;
+    position: fixed !important;
+    top: 0;
+    width: calc(100% - (47px)) !important;
+    @include radius(70px);
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.7) !important;
+    backdrop-filter: blur(50px);
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.05))
+}
+
+.btn-shadow {
+    box-shadow: 0px 10px 30px rgba(255, 85, 42, 0.25);
+}
+
+.btn-contact {
+    height: 44px !important;
+}
+
+.section {
+    &_1 {
+        background: transparent url(/img/background-2.png) no-repeat 0 0;
+        background-size: cover;
+        margin-top: -100px !important;
+        &_contenu {
+            position: absolute;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            top: calc(100vh - (600px));
+            justify-content: center;
+            flex-direction: column;
+            height: 300px;
+            text-align: center;
+            color: #fff;
+            >h3 {
+                margin-bottom: 30px;
+                @include f-size(70px)
+            }
+            >p {
+                margin-bottom: 60px;
+                @include f-size(20px)
+            }
+            >a {
+                padding: 10px;
+            }
+        }
+        &_block {
+            &_right {
+                // margin-top: 80px !important;
+                &_card {
+                    // margin-top: calc(100vh - (300px));
+                    margin-top: 35%;
+                    overflow: hidden;
+                    backdrop-filter: blur(20px);
+                    background: rgba(255, 255, 255, 0.05);
+                    box-shadow: 0px 10px 30px rgb(0 0 0 / 5%) !important;
+                }
+                &_body {
+                    backdrop-filter: blur(20px);
+                    background: rgba(255, 255, 255, 0.5);
+                    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05) !important;
+                    >a {
+                        width: 100%;
+                        font-size: 20px;
+                        font-weight: 500;
+                        display: inline-flex;
+                        justify-content: center;
+                    }
+                }
+            }
+            &_left {
+                margin-top: 3%;
+                &_card {
+                    padding: 40px 0 0 0;
+                    >.card-body {
+                        img {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 10px;
+                            position: absolute;
+                            left: 0;
+                            z-index: 3;
+                            width: 120px;
+                            top: -60px;
+                            right: 0;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+                &_img {
+                    text-align: center;
+                    >img {
+                        width: 60vh !important;
+                    }
+                }
+            }
+        }
+    }
+    &_2 {
+        margin: 150px 0 150px 0;
+        &_card {
+            background: transparent url(/img/frame-3.png) no-repeat 0 0;
+            background-size: cover;
+            box-shadow: 0 10px 20px rgb(0 0 0 / 20%) !important;
+            border-radius: 30px;
+            >.card-body {
+                height: 500px;
+            }
+            &_content {
+                margin-top: 92px;
+            }
+        }
+        &_block {
+            &_right {
+                >div>div>img {
+                    height: 560px;
+                    position: absolute;
+                    width: 705px;
+                    right: 0;
+                    top: -65px;
+                }
+            }
+        }
+    }
+    &_3 {
+        &_card {
+            &_content {
+                >img {
+                    width: 175px;
+                    position: absolute;
+                    margin: 0;
+                    left: -88px;
+                }
+                background: $gris;
+                color: $dark;
+                padding: 200px 20px 200px 50px;
+            }
+        }
+        &_block {
+            &_right {
+                background: transparent url(/img/frame-4.png) no-repeat 0 0;
+                background-size: cover;
+            }
+        }
+    }
+    &_4 {
+        &_card {
+            >.card-body {
+                padding-top: 90px !important;
+            }
+        }
+    }
+    &_5 {
+        &_block {
+            &_left {
+                background: $dark !important;
+                justify-content: center;
+                flex-direction: row;
+                padding: 205px 48px;
+                >p {
+                    color: rgba(255, 255, 255, 0.85) !important;
+                }
+            }
+            &_right {
+                background: transparent url(/img/contact.png) no-repeat 0 0;
+                background-size: cover;
+                &_card {
+                    border-radius: 25px !important;
+                    margin: 100px 30px;
+                    background: rgba(255, 255, 255, 0.4);
+                    backdrop-filter: blur(50px);
+                    overflow: hidden;
+                    >.card-header {
+                        padding: 20px 0 !important;
+                        font-size: 24px;
+                        background: #fff !important;
+                    }
+                    >.card-body {
+                        >form {
+                            >div.form-group {
+                                >.form-control {
+                                    background-color: rgba(255, 255, 255, 0.7);
+                                    @include radius(10px)
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &_contact {
+            &_infos {
+                background: rgba(255, 255, 255, 0.35);
+                width: 100%;
+                @include radius(15px);
+                overflow: hidden;
+                >.icone {
+                    padding: 20px;
+                    background: rgba(255, 255, 255, 0.6);
+                    color: #fff;
+                    @include radius(15px);
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    flex: none;
+                }
+                >.contenu {
+                    text-align: left !important;
+                    padding: 35px 0 35px 30px;
+                    text-align: center;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.team {
+    flex: 0 0 33.33333333%;
+    background-color: #232323;
+    border-radius: 20px;
+    padding: 0px 0 10px 0;
+    margin: 50px;
+    &_img {
+        margin-bottom: 10px;
+        width: 100%;
+        overflow: hidden;
+        margin-top: 0;
+        >img {
+            width: 100%;
+            border-radius: 20px;
+            padding: 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        margin-top: 0 !important;
+        width: 100% !important;
+        padding: 0;
+        margin: 0 !important;
+        border-radius: 0 !important;
+        background: #fff !important;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .team {
+        margin: 10px;
+        font-size: 10px;
+        &_contenu {
+            >h4 {
+                font-size: 10px;
+            }
+            >p {
+                height: 30px;
+            }
+        }
+    }
+    .section {
+        &_1 {
+            margin-top: 0 !important;
+            &_block {
+                &_left {
+                    min-height: 30vh !important;
+                }
+            }
+            &_contenu {
+                position: absolute;
+                margin: 0 auto;
+                left: 0;
+                right: 0;
+                top: 0;
+                color: #fff;
+                >h3 {
+                    margin-bottom: 30px;
+                    @include f-size(40px)
+                }
+                >p {
+                    margin-bottom: 20px;
+                    @include f-size(12px)
+                }
+                >a {
+                    padding: 10px;
+                    width: 80% !important;
+                }
+            }
+            &_block {
+                &_left_img {
+                    >img {
+                        width: 30vh !important;
+                    }
+                }
+                &_right {
+                    &_card {
+                        margin-top: 0 !important;
+                    }
+                }
+            }
+        }
+        &_2 {
+            &_card {
+                &_content {
+                    margin-top: 30px;
+                }
+            }
+            &_block {
+                &_right {
+                    >div>div>img {
+                        height: auto;
+                        position: relative;
+                        width: 100%;
+                        z-index: 1000;
+                        margin-top: 100px;
+                    }
+                }
+            }
+        }
+        &_3 {
+            &_card {
+                &_content {
+                    text-align: center !important;
+                    >img {
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+        &_5 {
+            &_block {
+                &_left {
+                    padding: 30px;
+                    min-height: auto !important;
+                }
+            }
+        }
+    }
+}

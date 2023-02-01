@@ -1,0 +1,103 @@
+.btn-shadow {
+    box-shadow: 0px 10px 30px rgba(255, 85, 42, 0.25);
+    padding: 10px 32px;
+}
+
+label {
+    color: $gray-200;
+    font-style: normal;
+    font-weight: 400 !important;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.jumbotron {
+    background-color: #f5f5f5 !important;
+    border-radius: 20px !important;
+}
+
+#showPassword {
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    border-radius: 0 30px 30px 0 !important;
+}
+
+.profil_image_edit {
+    padding: 50px !important;
+}
+
+.profile-wrapper {
+    .user {
+        // margin-bottom: -30px;
+    }
+    .profil {
+        display: contents;
+        &_image {
+            margin-top: -80px;
+            &_edit {
+                padding: 50px;
+            }
+            // border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            overflow: hidden;
+            >img {
+                height: 100px;
+                width: 100px;
+                object-fit: cover;
+            }
+        }
+        &_infos {
+            // min-height: 395px;
+            border-radius: 4px;
+            &_tab {
+                .row>.title {
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+            }
+        }
+        &_title {
+            text-transform: capitalize;
+            >span {
+                text-transform: uppercase;
+            }
+            &_name {
+                color: $blue;
+            }
+        }
+    }
+    .divider {
+        border: 1px solid #fff;
+        width: 80px;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    .nav-tabs {
+        border-bottom: 1px solid rgba($primary, .2) !important;
+    }
+    .nav-tabs .nav-link.active,
+    .nav-tabs .nav-item.show .nav-link {
+        color: #fff !important;
+        background-color: $primary !important;
+        border-color: $primary $primary $primary !important;
+    }
+    .profile-work {
+        strong {
+            color: #767676;
+            font-weight: 500 !important;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+    }
+    label {
+        cursor: pointer;
+        /* Style as you please, it will become the visible UI component. */
+    }
+    #image-upload {
+        opacity: 0;
+        position: absolute;
+        z-index: -1;
+    }
+}

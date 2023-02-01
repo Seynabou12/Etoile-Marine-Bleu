@@ -1,0 +1,147 @@
+
+.container-login{
+    width: 100%;
+    display: flex;
+    font-display: row;
+    justify-content: space-between;
+
+    .form-login{
+        margin-left: 45px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+
+        .form-img-logo{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 50%;
+            align-items: center;
+            margin-left: 45px;
+            margin-top: 25px;
+            margin-bottom: 15%;
+            >img{
+                width: 80px;
+                height: 90px;
+                margin-top: 10px;
+            }
+            .my-revo{
+                width: 350px !important;
+                height: 85px !important;
+                margin-left: 20px;
+            }
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 70%;
+            margin-top: -8%;
+            .group{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                >label{
+                    font-size: 14px;
+                    font-weight: 300;
+                    margin-bottom: 15px;
+                    margin-top: 15px;
+                }
+                >input{
+                    width: 100%;
+                    height: 44px;
+                    border: none;
+                    border-radius: 30px;
+                    padding: 0 32px 0 32px;
+                    background-color: #d3d3d3;
+                }
+
+            }
+            .group-submit{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 42px;
+                .submit{
+                    >button{
+                        background-color: $primary;
+                        width: auto;
+                        height: 44px;
+                        border: none;
+                        padding: 0 32px 0 32px;
+                        border-radius: 30px;
+                        color: #ffff;
+                        margin-top: 12px;
+                        box-shadow: 0 10px 20px rgba(255, 84, 41, 0.228);
+                    }
+                }
+                .redirect-register{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    .dark{
+                        color: #030303;
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
+
+
+    }
+    .container-login-img{
+        background-image: url("../../../../../public/img/bgLogin.png");
+        height: 100vh;
+
+    }
+}
+.connexion{
+    padding-left: 60px !important;
+    padding: 50px !important;
+    &_footer{
+        position: absolute !important;
+        bottom: 10px !important;
+    }
+    &_title{
+        margin-top: -48px !important;
+        top: 10px;
+        text-align: center;
+        margin: 0 auto;
+        width: 50%;
+        left: 0;
+        right: 0;
+        border-radius: 30px;
+        background: #fff;
+        color: #07765a;
+        font-size: 20px;
+        padding: 5px;
+        margin-bottom: 30px;
+    }
+    &_img{
+        margin:-100px 0 50px 0;
+    }
+    &_contenu{
+        margin-top: 60px;
+        padding: 30px;
+        background: rgb(255 255 255 / 28%);
+        border-radius: 30px;
+        &_form{
+            >input{
+                border-radius: 10px !important;
+                border-radius: 10px !important;
+                padding: 25px 10px !important;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 680px){
+    .connexion{
+        padding-left: 20px !important;
+        &_img{
+        }
+        &_contenu{
+            width: 100%;
+        }
+    }
+}

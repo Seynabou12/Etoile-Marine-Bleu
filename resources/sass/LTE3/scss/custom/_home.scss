@@ -1,0 +1,346 @@
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #F5F5F5;
+}
+.mobile{
+    display: none;
+    visibility: hidden;
+}
+.btn-plus{
+    border: none;
+    width: 150px;
+    border-radius: 30px;
+    margin: 12px auto;
+    align-content: center;
+    box-shadow: rgba(255, 85, 42, 0.2) 0px 4px 12px;
+}
+.title-plus{   
+    font-size: 17px;
+    font-weight: 500;
+    color: #767676;
+    align-self: center;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.minilogo{
+    width: 65px;
+    height: 65px;
+    margin-left: -2%;
+}
+.home-title{
+    font-size: 30px !important;
+    font-weight: 300 !important;
+    margin-top: -48px !important;
+    margin-left: 38px !important;
+}
+.home-img{
+    width: 510px;
+    height: 300px;
+}
+.section1{
+    border-radius: 25px;
+    padding: 3%;
+    margin-top: 10px;
+    margin-bottom: 10%;
+    .detail-card{
+        height: 470px;
+        width: 400px;
+        background-color: #ffffff;
+        margin-top: -13%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 20px;
+        position: absolute;
+        
+        .card-title{
+                height: 70px;
+                background-color: #FF552A;
+                color: #fbfbfb;
+                width: 100%;
+                border-radius: 20px 20px 0 0;
+                border: none;
+                text-align: center;
+                align-content: center;
+                >h3{
+                    font-size: 30px;
+                    font-weight: 300;
+                    margin-top: 14px;
+                }
+            }
+            .card-content{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                position: absolute;
+                width: auto;
+                margin-top: 25%;
+                margin-left: 2%;
+                padding: 10px;
+                .txt{
+                    >h3{
+                        font-size: 20px;
+                        font-weight: 400;
+                        margin-top: 2%;
+                    }
+                    >p{
+                        font-size: 14px;
+                    }
+                }
+                .cnx-btn{
+                    height: 65px;
+                    background-color: #FF552A;
+                    color: #fbfbfb;
+                    width: 360px;
+                    border: none;
+                    border-radius: 12px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    padding: 2%;
+                    margin-bottom: 2%;
+                    margin-top: 2%;
+                    box-shadow: rgba(255, 85, 42, 0.2) 0px 4px 12px;
+                    >img{
+                        width: 30px;
+                        height: 30px;
+                        margin-left: 2%;
+                    }
+                    >p{
+                        font-size: 18px;
+                        font-weight: 300;
+                        margin-left: 10px;
+                        margin-top: 6%;     
+                    }
+                }
+            }
+        }   
+}
+.desk{
+        width: 100%;
+        background-color: #ffff;
+        height: 60px;
+        padding-bottom: 1%;
+        padding-top: 1%;
+        padding-left: 2%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        margin:  auto;
+        border-radius: 12px;
+        
+        .date{
+            width: 40px;
+            height: 40px;
+            padding: 1%;
+            background-color: #7676761A;
+            opacity: 10px;
+            border-radius: 30px;
+            text-align: center;
+            >p{
+                font-size: 14px;
+                font-weight: 300;
+                
+            }
+        }
+        .actuality-txt{
+            background-color: #7676761A;
+            opacity: 10px;
+            padding: 10px;
+            border-radius: 30px;
+            .span{
+                font-size: 14px;
+            }
+        }
+        .btn{
+            border-radius: 30px !important ;
+        }
+    }
+
+
+//mobile
+@media only screen and (max-width: 700px){
+    body{
+        padding: 10px;
+    }
+    .desk{ 
+        display: none;
+        visibility: hidden;
+    }
+    .mobile{
+        display: initial;
+        visibility: visible;
+        width: 500px;
+        height: 150px;
+        background-color: #ffff;
+    }
+    .btn-plus{
+        border: none;
+        width: 150px;
+        border-radius: 30px;
+        margin: 12px auto;
+        margin-left: 25%;
+        margin-right: 25%;
+        align-content: center;
+        box-shadow: rgba(255, 85, 42, 0.2) 0px 4px 12px;
+        
+    }
+    .home-img{
+        width: 80%;
+        height: 270px;
+        margin-top: 18px;
+        margin-bottom: 54px;
+        margin-left: 20%;
+    }
+    .home-title{
+        font-size: 28px !important;
+        font-weight: 300 !important;
+        margin-top: -48px !important;
+        margin-left: 52px !important;
+    }
+    .section1{
+        border-radius: 30px;
+        margin-top: 10px;
+        height: 500px;
+        padding-top: 20px;
+       .detail-card{
+        height: 324px;
+        width: 290px;
+        margin-bottom: 50px;
+        margin-left: 100px !important;
+            .card-title{
+                height: 40px;
+                width: 100%;
+                border-radius: 20px 20px 0 0;
+                border: none;
+                text-align: center;
+                margin:1% auto;
+                >h3{
+                    font-size: 18px;
+                    font-weight: 300;
+                    margin-top: 12px;
+                }
+            }
+            .card-content{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: flex-start;
+                position: absolute;
+                width: auto;
+                margin-top: 20%;
+                padding: 8px;
+                .txt{
+                    .h3-1{
+                        font-size: 12px;
+                        font-weight: 400;
+                        margin-top: 2%;
+                        margin-left: -20%;
+                    }
+                    .h3-2{
+                        font-size: 12px;
+                        font-weight: 400;
+                        margin-top: 2%;
+                        margin-left: -45%;
+                    }
+                    >p{
+                        font-size: 10px;
+                    }
+                }
+                .cnx-btn{
+                    height: 40px;
+                    background-color: #FF552A;
+                    color: #fbfbfb;
+                    width: 200px;
+                    border: none;
+                    border-radius: 12px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    padding: 2%;
+                    margin-bottom: 2%;
+                    margin-top: 2%;
+                    box-shadow: rgba(255, 85, 42, 0.2) 0px 4px 12px;
+                    >img{
+                        width: 20px;
+                        height: 20px;
+                        margin-left: 2%;
+                    }
+                    >p{
+                        font-size: 12px;
+                        font-weight: 300;
+                        margin-left: 10px;
+                        margin-top: 6%;     
+                    }
+                }
+            }
+        }
+    }
+    .section-5{
+        margin-top: 200px !important;
+    }
+    .date{
+        width: 100px;
+        height: 40px;
+        padding: 1%;
+        background-color: #FAFAFA;
+        border-radius: 12px;
+        text-align: center;
+        >p{
+            font-size: 14px;
+            font-weight: 300;
+            
+        }
+    }
+    .txt{
+        text-align: center;
+        >p{
+            font-size: 14px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    }
+    .voir-plus{
+        float: right;
+        >button{
+            border: 1px solid #FF552A;
+            background-color: transparent;
+            border-radius: 14px;
+            color: #FF552A;
+            padding: 3px;
+        }
+    }
+    .title-plus{   
+        font-size: 17px;
+        font-weight: 500;
+        color: #767676;
+        align-self: center;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    .btn{
+        border-radius: 30px !important ;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

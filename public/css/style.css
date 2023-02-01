@@ -1,0 +1,17 @@
+/* .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #214999 !important;
+    background-color: rgb(245 245 245) !important;
+    width: 100% !important;
+    padding: 10px !important;
+    font-size: 16px !important;
+    border-radius: 30px 0px 0px 30px;
+}
+
+.sidebar-mini .main-sidebar .nav-link, .sidebar-mini-md .main-sidebar .nav-link, .sidebar-mini-xs .main-sidebar .nav-link {
+    width: calc(250px - 0rem * 2) !important;
+}
+
+[class*=sidebar-dark-] .nav-treeview > .nav-item > .nav-link.active, [class*=sidebar-dark-] .nav-treeview > .nav-item > .nav-link.active:hover, [class*=sidebar-dark-] .nav-treeview > .nav-item > .nav-link.active:focus {
+    background-color: rgba(61, 153, 112, 0.3) !important;
+    color: #343a40;
+} */

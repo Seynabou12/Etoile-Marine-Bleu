@@ -1,0 +1,197 @@
+.radius-20 {
+    border-radius: 20px !important;
+}
+
+tr:hover {
+    >td {
+        >div.dept-badge:hover {
+            background: #fff !important;
+            color: $primary !important;
+        }
+    }
+}
+
+.dept-badge:hover {
+    background: #fff !important;
+    color: $primary !important;
+}
+
+.numberCircle {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+    background: #fff;
+    border: 2px solid #e4032e;
+    color: #e4032e;
+    text-align: center;
+    font: 32px Arial, sans-serif;
+}
+
+.badge.bg-success-soft {
+    color: #00d97e;
+}
+
+.badge {
+    vertical-align: middle;
+}
+
+.bg-success-soft {
+    background-color: #ccf7e5!important;
+}
+
+.text-success-soft {
+    color: #00d97e!important;
+}
+
+span>.icone {
+    >i {
+        font-size: 20px !important;
+        opacity: 0.5;
+    }
+}
+
+h6>span.subtitle {
+    font-size: 11px !important;
+    text-transform: capitalize;
+}
+
+@mixin height($taille) {
+    height: $taille;
+}
+
+.dashboard {
+    &_liste {
+        @include height(350px);
+        overflow-y: auto;
+    }
+    &_gaph {
+        height: 430px !important;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .dashboard {
+        &_liste {
+            height: auto !important
+        }
+    }
+}
+
+.text-muted-light {
+    color: #6c757d8a !important;
+}
+
+// @media only screen and (min-width: 1200px) {
+//     .dashboard{
+//         &_liste{
+//             height:auto !important
+//         }
+//     }
+// }
+// Statitisque csss
+.block {
+    transition: all .2s ease-in-out;
+}
+
+.block:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
+}
+
+.dropdown-item,
+.dropdown-menu-right {
+    padding: 0 10px;
+    >a {
+        border-bottom: 1px solid #eee;
+        >i {
+            width: 30px;
+            color: $primary;
+        }
+    }
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    color: $primary !important;
+    background-color: white !important;
+}
+
+.action-btn {
+    margin: -5px 0;
+    >a>i {
+        color: white !important;
+    }
+}
+
+.bg-light-2 {
+    background: #f5f5f5 !important;
+}
+
+.universite {
+    &_info {
+        height: 40px;
+        padding: 10px 0 !important;
+    }
+    &_name {
+        position: absolute;
+        bottom: 20px;
+    }
+    &_cadre {
+        border-radius: 15px !important;
+        border: 2px dashed #BDBDBD;
+        margin-top: -10px;
+        height: 300px;
+        &_badge {
+            border-radius: 30px !important;
+            padding: 10px 30px !important;
+        }
+    }
+}
+
+.radius-30 {
+    border-radius: 30px !important;
+}
+
+.radius-15 {
+    border-radius: 15px !important;
+}
+
+.formation {
+    &_form {
+        .form-control {
+            background: rgba(255, 255, 255, 0.35) !important;
+            color: $white !important;
+        }
+        textarea.form-control {
+            background: rgba(255, 255, 255, 0.35) !important;
+            color: $white !important;
+        }
+    }
+    .table thead th {
+        vertical-align: bottom;
+        border-bottom: none;
+    }
+    .table th,
+    .table td {
+        border-top: none !important;
+    }
+    &_tr {
+        background: #F2F2F2;
+        height: 45px;
+        &_td {
+            padding: 10 15px !important;
+            &_first {
+                border-radius: 15px 0 0 15px !important;
+            }
+            &_last {
+                border-radius: 0 15px 15px 0 !important;
+                padding: 10px 0 !important;
+                 :hover {
+                    background-color: $primary;
+                    color: white !important;
+                }
+            }
+        }
+    }
+}
